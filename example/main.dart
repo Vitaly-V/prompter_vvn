@@ -1,14 +1,12 @@
-import 'package:prompter_vvn/src/terminal.dart';
-import 'package:prompter_vvn/src/option.dart';
+import 'package:prompter_vvn/prompter_vvn.dart';
 
 void main() {
-  final term = Terminal();
   final options = [
     new Option('I want red', '#f00'),
     new Option('I want blue', '#00f'),
   ];
 
-  term.printOptions(options);
-  final response = term.collectInput();
-  print(response);
+  final prompter = new Prompter();
+  print(prompter.askBinary('Do you like dart'));
+
 }
