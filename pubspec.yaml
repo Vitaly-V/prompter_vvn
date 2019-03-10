@@ -1,3 +1,8 @@
 name: prompter_vvn
 version: 0.0.1
 description: Library to create CLI wizards
+author: Vitalii Vyrodov <test@gmail.com>
+homepage: https://google.com
+
+environment:
+  sdk: '<3.0.0'
