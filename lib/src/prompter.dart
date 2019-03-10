@@ -22,7 +22,7 @@ class Prompter {
   String _ask(String prompt, List<Option> options) {
     _terminal.clearScreen();
     _terminal.printPrompt(prompt);
-    _terminal.printOptions([]);
+    _terminal.printOptions(options);
 
     return _terminal.collectInput();
   }
